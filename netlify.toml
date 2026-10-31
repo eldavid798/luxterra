@@ -1,10 +1,10 @@
 [build]
   functions = "netlify/functions"
 
-[functions]
+[functions."ai-generate"]
   timeout = 30
 
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options = "DENY" 
+    X-Frame-Options = "DENY"
