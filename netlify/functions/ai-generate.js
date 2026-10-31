@@ -26,7 +26,7 @@ exports.handler = async (event) => {
   const { systemPrompt, userPrompt } = body;
 
   // Gemini 1.5 Flash — gratis y rápido
-  const GEMINI_MODEL = 'gemini-1.5-flash';
+  const GEMINI_MODEL = 'gemini-2.0-flash';
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
 
   const geminiBody = {
