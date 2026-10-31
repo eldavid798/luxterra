@@ -1052,7 +1052,7 @@ Reglas importantes:
 - Responde SOLO con el JSON, nada más`;
 
   try {
-    const response = await fetch('/api/ai-generate', {
+    const response = await fetch('/.netlify/functions/ai-generate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
